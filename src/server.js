@@ -6,7 +6,11 @@ import uploadRes from "./routes/upload.route.js"
 const app = express()
 const PORT = 4000
 
-app.use(cors())
+app.use(cors({
+    origin: ["https://mockmate-rho.vercel.app"],
+    methods: ["GET", "POST"],
+    credentials: true
+}));
 app.use(express.json())
 
 app.use("/api", HealthCheck)
