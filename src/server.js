@@ -9,6 +9,7 @@ const PORT = 4000
 app.use(cors({
     origin: ["https://mockmate-rho.vercel.app"],
     methods: ["GET", "POST"],
+      allowedHeaders: ["Content-Type"],
     credentials: true
 }));
 app.use(express.json())
