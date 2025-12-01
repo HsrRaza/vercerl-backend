@@ -1,8 +1,8 @@
 import express from "express";
 import cors from "cors";
 
-import HealthCheck from "./routes/health.routes.js";
-import uploadRes from "./routes/upload.route.js";
+import HealthCheck from "./src/routes/health.routes.js";
+import uploadRes from "./src/routes/upload.route.js";
 
 const app = express();
 
